@@ -2,7 +2,7 @@
 name = "rolint-pre-commit"
 version = "0.0.0"
 dependencies = [
-    "rolint==0.1.8",
+    "rolint==0.1.9",
 ]
 
 [project.optional-dependencies]
