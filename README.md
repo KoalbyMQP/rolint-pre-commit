@@ -15,7 +15,7 @@ To run RoLint on your C/C++/Python files before each commit:
 repos:
 -   repo: https://github.com/KoalbyMQP/rolint-pre-commit
     # RoLint version.
-    rev: v0.1.9
+    rev: 0.1.9
     hooks:
     -   id: rolint  # Text output (default)
 ```
@@ -28,7 +28,7 @@ For detailed reporting with JSON output:
 repos:
 -   repo: https://github.com/KoalbyMQP/rolint-pre-commit
     # RoLint version.
-    rev: v0.1.9
+    rev: 0.1.9
     hooks:
     -   id: rolint-json
         args: [--output-path, custom_results.json]  # Optional: custom output file
@@ -42,7 +42,7 @@ You can override default arguments:
 repos:
 -   repo: https://github.com/KoalbyMQP/rolint-pre-commit
     # RoLint version.
-    rev: v0.1.9
+    rev: 0.1.9
     hooks:
     -   id: rolint
         args: [--lang, cpp, --output, json]  # Force C++ mode with JSON output
@@ -56,7 +56,7 @@ To lint only specific file types:
 repos:
 -   repo: https://github.com/KoalbyMQP/rolint-pre-commit
     # RoLint version.
-    rev: v0.1.9
+    rev: 0.1.9
     hooks:
     -   id: rolint
         args: [--lang, python]  # Only check Python files
