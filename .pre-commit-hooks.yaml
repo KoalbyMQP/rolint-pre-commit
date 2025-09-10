@@ -1,19 +1,19 @@
 -   id: rolint
     name: RoLint
     description: Lint C/C++/Python code for robotics safety
-    entry: rolint check
+    entry: rolint check .
     language: python
     types: [c, c++, python]
     require_serial: false
-    pass_filenames: true
+    pass_filenames: false # FIXME: this should be true, but rolint currently errors if any filenames are passed
     args: [--output, text]
 
 -   id: rolint-json
     name: RoLint (JSON output)
     description: Lint C/C++/Python code for robotics safety with JSON output
-    entry: rolint check
+    entry: rolint check .
     language: python
     types: [c, c++, python]
     require_serial: false
-    pass_filenames: true
+    pass_filenames: false # FIXME: this should be true, but rolint currently errors if any filenames are passed
     args: [--output, json, --output-path, rolint_results.json]
